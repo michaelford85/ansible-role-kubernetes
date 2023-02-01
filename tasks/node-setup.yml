@@ -1,4 +1,6 @@
 ---
+- shell: echo '1' > /proc/sys/net/ipv4/ip_forward
+
 - name: Join node to Kubernetes control plane.
   shell: >
     {{ kubernetes_join_command }}
